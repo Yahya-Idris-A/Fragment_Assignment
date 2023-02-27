@@ -9,21 +9,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class ProfileFragment extends Fragment {
+public class StatisticFragment extends Fragment {
 
-    public ProfileFragment() {
+
+    public StatisticFragment() {
         // Required empty public constructor
     }
 
-    public static ProfileFragment newInstance(){
-        return new ProfileFragment();
+    public static StatisticFragment newInstance(){
+        return new StatisticFragment();
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        final View rootview = inflater.inflate(R.layout.fragment_profile, container, false);
+        // Inflate the layout for this fragment
+        final View rootview = inflater.inflate(R.layout.fragment_statistic, container, false);
         return rootview;
     }
 }

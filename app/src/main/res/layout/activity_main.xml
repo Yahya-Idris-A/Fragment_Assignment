@@ -32,25 +32,37 @@
             android:scaleType="centerCrop"
             android:src="@drawable/lahm1" />
     </androidx.cardview.widget.CardView>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:layout_marginTop="@dimen/heading_top_margin">
-        <fragment
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/fragment"
-            tools:layout="@layout/fragment_profile"
-            android:name="com.example.fragmentassignment.ProfileFragment"/>
-    </ScrollView>
     <Button
         android:id="@+id/view_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button2"
+        android:layout_gravity="center"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button1"
-        android:layout_gravity="center"/>
+        android:id="@+id/title_child"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/fragment"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.example.fragmentassignment.ProfileFragment"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_statistic"
+        tools:layout="@layout/fragment_statistic"
+        android:name="com.example.fragmentassignment.StatisticFragment"/>
+
 
 
 </LinearLayout>
