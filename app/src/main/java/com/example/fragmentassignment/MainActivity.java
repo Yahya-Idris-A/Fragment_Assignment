@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (!isFragmentDisplayedStatistic){
                     closeProfileFragment();
-                    displayStatisticFragmet();
+                    displayStatisticFragment();
                 }
                 else {
                     closeStatisticFragment();
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         isFragmentDisplayedStatistic = false;
     }
 
-    public void displayStatisticFragmet() {
+    public void displayStatisticFragment() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         StatisticFragment statisticFragment = StatisticFragment.newInstance();

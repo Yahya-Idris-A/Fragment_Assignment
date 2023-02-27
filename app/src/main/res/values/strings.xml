@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fragment Assignment</string>
+    <string name="app_name">Player Profile</string>
     <string name="title">Philip Lahm</string>
     <string name="button1">Lihat Statistik Seluruh Karier</string>
     <string name="button2">Lihat Profil Pemain</string>
